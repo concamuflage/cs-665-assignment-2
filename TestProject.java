@@ -9,9 +9,9 @@ import edu.bu.met.cs665.example1.Person;
  * Write some Unit tests for your program like the examples below.
  */
 
-public class TestAge {
+public class TestProject {
 
-    public TestAge() {
+    public TestProject() {
     }
 
     @Test

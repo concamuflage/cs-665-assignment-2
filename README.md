@@ -1,13 +1,14 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
+| Name         | Liangmi Zhang              |
+| Date         | 10/05/2025                 |
+| Course       | Fall                       |
 | Assignment # |                            |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+The objective of the assignment is to use observer pattern to 
+achieve required functionalities.
 
 # GitHub Repository Link:
 https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
