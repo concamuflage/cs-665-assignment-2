@@ -6,12 +6,18 @@
 | Course       | Fall                       |
 | Assignment # |                            |
 
+# Assumptions 
+
+Each consumer can order one food item in an order.
+Delivery address is always the same as consumer’s residential address.
+Each order from a consumer generates a new DeliveryRequest; in other words, Orders cannot be combined for a single delivery.
+
 # Assignment Overview
 The objective of the assignment is to use observer pattern to 
 achieve required functionalities.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/concamuflage/cs-665-assignment-2.git
 
 # Implementation Description 
 
@@ -20,11 +26,23 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+
+The design is flexible because the system can be expanded to include new types of shops and drivers. 
+
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+
+It is simple and understandable because meaningful variables are used and there is documentation for each class and method.
+
 - Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+
+For example, the major methods are in the Shop abstract method. We don't have to 
+repeat the same code in the subclasses.  It is important because a change is necessary, only one place needs to be changed.
+
+- If applicable, mention any design patterns you have used and explain why they were chosen.
+
+I used observer pattern because observer pattern can achieve the required feature, that is a shop need to inform all the drivers it knows when a delivery is needed.
 
 
 # Maven Commands

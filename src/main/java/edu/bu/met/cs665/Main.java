@@ -1,28 +1,28 @@
 /**
- * Name: Liangmi Zhang
- * Course: CS-665 Software Designs & Patterns
+ * Name: Liangmi Zhang 
+ * Course: CS-665 Software Designs & Patterns 
  * Date: 10/04/2025
- * File Name: Main.java
- * Description: main class for program entrance
+ * Description: main class for program entry point
  */
 
 package edu.bu.met.cs665;
 
-import java.util.List;
 import edu.bu.met.cs665.example1.*;
+import java.util.List;
+
 
 /**
- * This is the Main class.
+ * The {@code Main} class serves as the program’s entry point, demonstrating
+ * the observer pattern by simulating a food delivery system involving
+ * {@code Shop}, {@code Driver}, {@code Consumer}, and {@code Order} objects.
  */
 public class Main {
 
   /**
-   * A main method to run examples.
-   * You may use this method for development purposes as you start building your
-   * assignments/final project. This could prove convenient to test as you are
-   * developing.
-   * However, please note that every assignment/final projects requires JUnit
-   * tests.
+   * Initializes the {@code Shop}, {@code Driver}s, and {@code Consumer},
+   * places an {@code Order}, and prints notifications sent to all {@code Driver}s.
+   *
+   * @param args command-line arguments (not used)
    */
   public static void main(String[] args) {
     Shop myshop = new ShopConcrete("Crazy Wok", "Common Wealth Avanue 888");
@@ -50,12 +50,15 @@ public class Main {
       Consumer consumer = order.getConsumer();
       Food food = order.getFood();
       System.out.println(
-          consumer.getName() + " ordered " +
-              food.getName() + " from " +
-              shop.getName() + "; Delivery Address: " +
-              consumer.getAddress() + ". Notified Driver: " +
-              driver.getIDNumber());
-
+          consumer.getName()
+              + " ordered "
+              + food.getName()
+              + " from "
+              + shop.getName()
+              + "; Delivery Address: "
+              + consumer.getAddress()
+              + ". Notified Driver: "
+              + driver.getIdNumber());
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../cs-665-fall-2025"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "cs-665-project-template-1",
+    "java.configuration.updateBuildConfiguration": "interactive"
+  }
+}
